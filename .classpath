@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="D:/迅雷下载/软件开发工具/sdk/platforms/android-19/android.jar" sourcepath="D:/下载/sources-19_r01.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="http://developer.android.com/reference/"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/下载/docs-19_r02.zip"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
