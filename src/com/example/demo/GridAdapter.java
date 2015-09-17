@@ -2,6 +2,8 @@ package com.example.demo;
 
 import java.util.List;
 
+import com.example.model.LableBean;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +13,9 @@ import android.widget.ImageView;
 
 public class GridAdapter extends BaseAdapter {
 	private Context context;
-	private List<Integer> list;
+	private List<LableBean> list;
 
-	public GridAdapter(Context context, List<Integer> list) {
+	public GridAdapter(Context context, List<LableBean> list) {
 		this.context = context;
 		this.list = list;
 	}
@@ -42,7 +44,7 @@ public class GridAdapter extends BaseAdapter {
 			view = convertView;
 		}
 		ImageView imageView = (ImageView) view.findViewById(R.id.itemImage);
-		imageView.setImageResource(list.get(position));
+		imageView.setImageResource(list.get(position).getImgID());
 		return view;
 	}
 

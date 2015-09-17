@@ -9,11 +9,13 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.example.model.LableBean;
+
 public class DelGridAdapter extends BaseAdapter {
 	private Context context;
-	private List<Integer> list;
+	private List<LableBean> list;
 
-	public DelGridAdapter(Context context, List<Integer> list) {
+	public DelGridAdapter(Context context, List<LableBean> list) {
 		this.context = context;
 		this.list = list;
 	}
@@ -42,7 +44,7 @@ public class DelGridAdapter extends BaseAdapter {
 			view = convertView;
 		}
 		ImageView imageView = (ImageView) view.findViewById(R.id.itemImage);
-		imageView.setImageResource(list.get(position));
+		imageView.setImageResource(list.get(position).getImgID());
 		return view;
 	}
 
